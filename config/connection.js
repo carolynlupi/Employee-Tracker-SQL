@@ -4,8 +4,8 @@ require('dotenv').config();
 // Connect to the database using MySQL, utilizing .env file for secure password (also added to .gitignore)
 const db = mysql.createConnection({
     host: 'localhost',
-    port: 3306, 
     user: 'root',
+    port: 3306, 
     password: process.env.PASSWORD,
     database: 'employee_db'
 });

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const db = require('./config/connection.js');
 const { displayTitleText } = require('./lib/specialText.js');
 const selectTask = require('./lib/selectTask.js');
